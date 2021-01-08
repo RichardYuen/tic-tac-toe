@@ -282,16 +282,16 @@ class gameScene extends Phaser.Scene{
 
 		// Diagonally check
 		if(board[0][0] == board[1][1] && board[1][1] == board[2][2]){
-			if(board[0][0] == player)
+			if(board[1][1] == player)
 				return +10
-			else if(board[0][0] == opponent)
+			else if(board[1][1] == opponent)
 				return -10
 		}
 
 		if(board[2][0] == board[1][1] && board[1][1] == board[0][2]){
-			if(board[0][0] == player)
+			if(board[1][1] == player)
 				return +10
-			else if(board[0][0] == opponent)
+			else if(board[1][1] == opponent)
 				return -10
 		}
 		return 0
